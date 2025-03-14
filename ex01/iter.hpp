@@ -3,14 +3,13 @@
 
 #include <iostream>
 
-template <typename T, typename Func>
-void iter(T* array, size_t length, Func func)
+template <typename T, typename F>
+void iter(T* array, size_t length, F func)
 {
-    if (!array || !func) return;
-    for (int i = 0; i < length; i++)
-    {
+    if (!array || !func)
+        return;
+    for (size_t i = 0; i < length; i++)
         func(array[i]);
-    }
 }
 
 #endif
