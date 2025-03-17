@@ -4,7 +4,7 @@
 #include <iostream>
 
 template <typename T, typename F>
-void iter(T* array, size_t length, F func)
+void iter(T *array, size_t length, F func)
 {
     if (!array || !func)
         return;

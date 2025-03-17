@@ -12,6 +12,11 @@ int main()
     std::cout << "max(2, 5) = " << max(2, 5) << std::endl;
 
     std::string s1 = "apple", s2 = "banana";
+
+    std::cout << "Before swap: s1 = " << s1 << ", s2 = " << s2 << std::endl;
+    swap(s1, s2);
+    std::cout << "After swap: s1 = " << s1 << ", s2 = " << s2 << std::endl;
+
     std::cout << "min(\"apple\", \"banana\") = " << ::min(s1, s2) << std::endl;
     std::cout << "max(\"apple\", \"banana\") = " << ::max(s1, s2) << std::endl;
 
