@@ -16,7 +16,9 @@ class Array
     
         Array(unsigned int n) : _size(n)
         {
-            _data = new T[n]();
+            _data = new T[n];
+            for (unsigned int i = 0; i < _size; i++)
+                _data[i] = 0;
         }
     
         Array(const Array& other) : _size(other._size)
