@@ -8,8 +8,8 @@ int main()
     swap(a, b);
     std::cout << "After swap: a = " << a << ", b = " << b << std::endl;
 
-    std::cout << "min(2, 5) = " << min(2, 5) << std::endl;
-    std::cout << "max(2, 5) = " << max(2, 5) << std::endl;
+    std::cout << "min(a, b) = " << min(a, b) << std::endl;
+    std::cout << "max(a, b) = " << max(a, b) << std::endl;
 
     std::string s1 = "apple", s2 = "banana";
 
